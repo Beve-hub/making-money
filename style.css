@@ -6,3 +6,104 @@
   .custom-bg {
     background-color: #55FE66; /* Your custom background color */
   }
+
+  .custom-bold {
+    font-weight: bold;
+  }
+  
+  .custom-normal {
+    font-weight: normal;
+  }
+  
+  .custom-light {
+    font-weight: lighter;
+  }
+  
+  .custom-italic {
+    font-style: italic;
+  }
+
+  .custom-font-size-20 {
+    font-size: 20px;
+  }
+
+  .custom-font-size-18 {
+    font-size: 18px;
+  }
+  .custom-font-size-16 {
+    font-size: 16px;
+  }
+  .custom-font-size-14 {
+    font-size: 14px;
+  }
+
+  .custom-font-size-12 {
+    font-size: 12px;
+  }
+  .custom-font-size-10 {
+    font-size: 10px;
+  }
+
+  .custom-font-size-8 {
+    font-size: 8px;
+  }
+  .custom-font-size-6 {
+    font-size: 6px;
+  }
+
+  .custom-font-size-4 {
+    font-size: 4px;
+  }
+
+  .custom-font-size-2 {
+    font-size: 2px;
+  }
+
+
+  .btn-custom-outline {
+    color: #fff; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #55FE66; /* Border color - customize as needed */
+  }
+  /* Optional hover effect */
+  .btn-custom-outline:hover {
+    background-color: #55FE66; 
+    color: #fff; 
+  }
+
+  .bottom-border {
+    border-bottom: 1px solid  #55FE66;
+    padding-bottom: 8px; 
+  }
+  .border {
+    border: 2px solid  #55FE66;
+    border-radius: 20px;
+  }
+
+  .top-border {
+    border-top: 1px solid  #55FE66;
+    padding-bottom: 8px; 
+  }
+
+  .carousel-inner {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    display: inline-block;
+    width: 100%; /* Adjust based on the number of items you want to display */
+    white-space: normal;
+  }
+
+  .custom-link {
+    color: #ffff; /* Set your desired text color */
+    text-decoration: none; /* Remove underline */
+    text-wrap: wrap;
+  }
+
+  /* Hover effect for the custom link */
+  .custom-link:hover {
+    color: #55FE66; /* Set your desired hover color */
+    text-decoration: underline; /* Add underline on hover */
+  }
