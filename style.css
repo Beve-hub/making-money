@@ -1,3 +1,19 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir', sans-serif;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: #0E0E0E;
+  transition: 0.3s;
+}
+
+
+
 .custom-color {
     color: #55FE66; /* Your custom color code */
   }
@@ -85,18 +101,14 @@
     padding-bottom: 8px; 
   }
 
-  .carousel-inner {
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .carousel-item {
-    display: inline-block;
-    width: 100%; /* Adjust based on the number of items you want to display */
-    white-space: normal;
-  }
-
+  
   .custom-link {
+    color: #ffff; /* Set your desired text color */
+    text-decoration: none; /* Remove underline */
+    text-wrap: wrap;
+  }
+  
+  .custom-links {
     color: #ffff; /* Set your desired text color */
     text-decoration: none; /* Remove underline */
     text-wrap: wrap;
@@ -107,3 +119,95 @@
     color: #55FE66; /* Set your desired hover color */
     text-decoration: underline; /* Add underline on hover */
   }
+
+  
+
+.marquee {
+  margin-top: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-slide {
+  animation: marquee 15s slide linear infinite;
+  display: inline-block;
+}
+
+/* Define the marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+.custom-background {
+  background-color: #0E0E0E; 
+  border-radius: 15px; 
+}
+
+.custom-back {
+  background-color: #0E0E0E; 
+}
+
+.outer-glow-card {
+  box-shadow: 0 0 20px rgb(4, 246, 40); /* Adjust the color and size as needed */
+}
+
+
+
+.navbar-nav .nav-link.active {
+  color: #55FE66 !important; /* Green color for the active link */
+}
+
+.btn-custom-outline {
+  border-color: #55FE66;
+  color: #55FE66;
+}
+
+.toggle {
+  background-color: #0E0E0E; 
+  border-radius: 15px; 
+  border-color: #fff;
+  width: 100%;
+  text-align: start;
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.toggle img {
+  width: 20px;
+}
+
+.dave{
+  background-color: #0E0E0E; 
+  border-radius: 15px; 
+  border-color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.Union {
+  width: 100px;
+}
+
+.dev {
+  background-color: #121212; 
+  border-radius: 5px; 
+  border-color: #fff;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.dev:focus {
+  background-color: #0000; 
+  border-radius: 5px; 
+  border-color: #fff;
+  color: #fff
+}
