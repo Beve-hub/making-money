@@ -120,29 +120,7 @@ body{
     text-decoration: underline; /* Add underline on hover */
   }
 
-  
 
-.marquee {
-  margin-top: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-}
-.marquee-slide {
-  animation: marquee 15s slide linear infinite;
-  display: inline-block;
-}
-
-/* Define the marquee animation */
-@keyframes marquee {
-  from { transform: translateX(0%); }
-  to { transform: translateX(-100%); }
-}
-
-.custom-background {
-  background-color: #0E0E0E; 
-  border-radius: 15px; 
-}
 
 .custom-back {
   background-color: #0E0E0E; 
@@ -210,4 +188,32 @@ body{
   border-radius: 5px; 
   border-color: #fff;
   color: #fff
+}
+
+
+.scan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.form{
+  background-color: #121212; 
+  width: 25rem;
+  height: 30rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  box-shadow: 0 0 20px rgb(4, 246, 40); 
+  border-radius: 25px; 
+  padding: 20px;
+
+}
+
+.word {
+  position: absolute;
+  right: 40rem;
+  top: 23.5rem;
 }
