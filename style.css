@@ -160,6 +160,19 @@ body{
   width: 20px;
 }
 
+.reg {
+  width: 30px;
+}
+
+.ret {
+  width: 25px;
+  height: 25px;
+}
+
+.regs {
+  width: 40px;
+}
+
 .dave{
   background-color: #0E0E0E; 
   border-radius: 15px; 
@@ -215,5 +228,5 @@ body{
 .word {
   position: absolute;
   right: 40rem;
-  top: 23.5rem;
+  top: 24.5rem;
 }
