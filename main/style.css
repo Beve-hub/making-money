@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  
+  body{
+    background: #0E0E0E;
+    transition: 0.3s;
+  }
+
+
+
+  .regs {
+    width: 35px;
+    height: 35px;
+  }
+
+
+
+
+
+
+.custom-back {
+  background-color: #0E0E0E; 
+}
+
+.custom-color {
+    color: #55FE66;
+}
+
+.outline {
+  background-color: #55FE6650;
+  color: #ffff;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+
+
+
+
