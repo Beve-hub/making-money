@@ -11,17 +11,10 @@
     transition: 0.3s;
   }
 
-
-
   .regs {
     width: 35px;
     height: 35px;
   }
-
-
-
-
-
 
 .custom-back {
   background-color: #0E0E0E; 
@@ -40,7 +33,145 @@
   margin-top: 7px;
 }
 
+.container{
+    display: flex;
+    padding-top: 20px;
+}
+
+/*-----------------left-sidear------------*/
+.left-sidebar{
+    background-color: #1e1d1d; 
+    height: 96vh;
+    position: absolute;
+    left: 0;
+    width: 16%;
+    padding-left: 30px;
+
+}
+
+.left-container{
+    display: grid;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left-list {
+    text-decoration: none;
+    display: grid;
+    align-items: center; 
+    color: #eae5e5;
+ }
+
+ .button {
+    color: #636363; /* Set your text color */
+    text-decoration: none; /* Remove underline for links */
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .button:hover {
+    background-color: #55FE66;
+    padding: 5px 20px; 
+    color:#fff;
+    border-radius: 20px;
+  }
+
+  .ton {
+    color: #fff;
+  }
+
+  .bottom-list {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .top-list {
+    position: absolute;
+    top: 7rem;
+  }
+
+  .button {
+    color: #636363; /* Set your text color */
+    text-decoration: none; /* Remove underline for links */
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .button:hover {
+    background-color: #55FE66;
+    padding: 5px 20px; 
+    color:#fff;
+    border-radius: 20px;
+  }
 
 
+  .buttons {
+    color: #bababa; /* Set your text color */
+    text-decoration: none; /* Remove underline for links */
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+   .buttons:hover {
+    background-color: #55FE66;
+    padding: 5px 20px; 
+    color:#454545;
+    border-radius: 20px;
+  }
+
+  .active.buttons {
+    background-color: #55FE66;
+    padding: 5px 20px; 
+    color:#424242;
+    border-radius: 20px;
+  }
+
+  .active.button {
+    background-color: #55FE66;
+    padding: 5px 20px; 
+    color:#424242;
+    border-radius: 20px;
+  }
 
 
+  .buttonst {
+    color: #bababa; /* Set your text color */
+    text-decoration: none; /* Remove underline for links */
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+   .buttonst:hover {
+    background-color: #55fe6685;
+    padding: 5px 20px; 
+    color:#454545;
+    border-radius: 20px;
+  }
+
+  .active.buttonst {
+    background-color: #8fff9a42;
+    padding: 5px 20px; 
+    color:#00ff22;
+    border-radius: 20px;
+  }
+
+  
+
+  .toggle {
+    position: absolute;
+    top: 18rem;
+    left: 16px;
+  }
+
+  .dave {
+    background-color: #1e1d1d;
+    gap: 5px;
+  }
