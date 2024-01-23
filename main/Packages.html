@@ -11,24 +11,87 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-back  px-5 py-4 fixed-top">
-        <div class="container-fluid">
-            <div>
-                <a class="navbar-brand" href="index.html">
-                    <img src="/img/Union.png" alt="" >
-                  </a>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-dark custom-back  px-5 py-4 fixed-top">
+    <div class="container-fluid">
+        <div>
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/Union.png" alt="" >
+              </a>
+        </div>
+     
+
+      <div class="d-none d-md-block">
+        <div class="d-flex gap-3 ">
+          <p  class="outline">Rank: <span class="custom-color">Member</span> </p>
+          <img src="/img/profile.png" alt="" class="regs">
+        </div>
+      </div>
+       
+
+      <div class=" d-block d-md-none">
+        <button class="btn " data-toggle="collapse" data-target="#collapseExample0" aria-expanded="false" aria-controls="collapseExample0">
+          <a class="custom-font-size-14" href="#"  onclick="activateButton(this)"><i class="bi bi-list custom-icon"></i></a>
+        </button>
+        <div class="collapse " id="collapseExample0">
+          <div class="left-list">
+            <div class="top-list">
+
+              <div class="d-grid gap-4">
+                <a class="buttons active" href="Dashboard.html" onclick="activateButton(this)"> <i class="bi bi-grid"></i> Dashboard</a>
+                <a class="buttons" href="Packages.html" onclick="activateButton(this)"> <i class="bi bi-layers"></i> Packages</a>
+                <a class="buttons" href="Investment.html"  onclick="activateButton(this)"> <i class="bi bi-briefcase"></i> Make Investment </a>
+                <a class="buttons" href="Withdraw.html"  onclick="activateButton(this)"> <i class="bi bi-credit-card"></i> Withdraw</a>
+              </div>
+
+             
+              </div>
+
+              <div class="toggle-nav  d-grid gap-4">
+                           <!---------------statictics------------->
+                <button class="btn " data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                  <a class="buttons" href="#"  onclick="activateButton(this)"><i class="bi bi-bar-chart"></i>Statistic Report</a>
+                </button>
+                <div class="collapse " id="collapseExample10">
+                    <div class="card dave">
+                        <a class="buttonst " href="Stats.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
+                        <a class="buttonst " href="Earn.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
+                        <a class="buttonst " href="Remove.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawals</a>
+                        <a class="buttonst " href="Affilate.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Affiliate</a>             
+                      </div>
+                </div>
+               
+               
+                <div>
+                  <p class="ton">Pages</p>
+                  <div class="d-grid gap-2">
+
+                                     <!---------------Team Network ------------->
+                <button class="btn" data-toggle="collapse" data-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample20">
+                  <a class="buttons" href="#"  onclick="activateButton(this)"><i class="bi bi-people"></i>Team Network</a>
+                </button>
+                <div class="collapse " id="collapseExample20">
+                    <div class="card dave">
+                        <a class="buttons " href="Summary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Live Summary</a>
+                        <a class="buttons " href="Sponsor.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> My Sponsor</a>
+                                 
+                      </div>
+                </div>
+
+               </div>
          
 
-          
-            <div class="d-flex gap-3">
-              <p  class="outline">Rank: <span class="custom-color">Member</span> </p>
-              <img src="/img/profile.png" alt="" class="regs">
-          </div>
-       
-        </div>
-      </nav>
+                  </div>
+        
 
+              </div>
+    
+         </div>
+        </div>
+       
+      </div>
+   
+    </div>
+  </nav>
      <div class="container   ">
         <!-------------left-side bar------------>
 
