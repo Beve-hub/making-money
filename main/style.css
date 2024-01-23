@@ -70,6 +70,14 @@
     color: #eae5e5;
  }
 
+ .left-lists {
+  text-decoration: none;
+  display: grid;
+  align-items: center; 
+  color: #eae5e5;
+  color: #636363; 
+}
+
  .button {
     color: #636363; /* Set your text color */
     text-decoration: none; /* Remove underline for links */
@@ -98,7 +106,9 @@
   .top-list {
     position: absolute;
     top: 7rem;
-  }
+    }
+
+    
 
   .button {
     color: #636363; /* Set your text color */
