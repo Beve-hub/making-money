@@ -40,7 +40,7 @@
   border-radius: 20px;
   padding: 5px;
   font-size: 12px;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .container{
@@ -63,28 +63,18 @@
     gap: 50px;
 }
 
-.left-list {
-    text-decoration: none;
-    display: grid;
-    align-items: center; 
-    color: #eae5e5;
- }
-
- .left-lists {
-  text-decoration: none;
-  display: grid;
-  align-items: center; 
-  color: #eae5e5;
-  color: #636363; 
+.top-lists {
+ background-color: #636363; 
+ padding: 10px;
 }
 
  .button {
-    color: #636363; /* Set your text color */
-    text-decoration: none; /* Remove underline for links */
+    color: #636363; 
+    text-decoration: none; 
     display: flex;
     gap: 10px;
     font-size: 14px;
-    transition: background-color 0.3s ease; /* Add smooth transition effect */
+    transition: background-color 0.3s ease; 
   }
   
   .button:hover {
@@ -181,7 +171,10 @@
     border-radius: 20px;
   }
 
-  
+  .tip {
+    color: white; 
+    text-decoration: none;
+  }
 
   .toggle {
     position: absolute;
@@ -218,10 +211,14 @@
   font-size: 14px;
   color:#454545;
  }
+
+ .custom-text-10{
+  font-size: 10px;
+ }
  .custom-text-12{
   font-size: 12px;
  }
-
+ 
  .custom-text-14{
   font-size: 14px;
  }
@@ -241,4 +238,13 @@
   font-size: 24px; /* Adjust the size as needed */
   color: #ffffff; /* Set the desired color */
   margin-right: 8px; /* Adjust spacing as needed */
+}
+
+.custom-i {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.custom-is {
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
