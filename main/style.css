@@ -78,8 +78,6 @@
     height: 96vh;
     left: 0;
     width: 16%;
-    padding-left: 30px;
-   
 }
 
 .left-container{
@@ -224,9 +222,8 @@
 
  .main-content {
   flex-basis: 85%;
-  margin-left: 1rem;
   color: white;
- }
+  }
 
  .content {
   margin-top: 5rem;
