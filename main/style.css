@@ -38,6 +38,18 @@
   padding: 10px;
   border-radius: 20px;
   width: 8rem;
+  text-decoration: none;
+}
+
+.custom-bttn {
+  background-color: #55FE66;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 16rem;
+  margin-top: 2rem;
+  text-decoration: none;
 }
 .custom-btns {
   background-color: #111111;
@@ -288,4 +300,12 @@
   border-color: #fff;
   color: #fff
 }
+.size{
+  background-color: #424242;
+  width: 3rem;
+  height: 3rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 

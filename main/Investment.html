@@ -208,7 +208,7 @@
               <p class="custom-font-size-10 custom-ist">$101 minimum investment</p>
           </div>
 
-          <form action="#" method="post" class="gap-5">
+          <form action="#" method="post" class="gap-5 ">
             <div class="col-md ">
               <div class="text-start dev">
               <label for="validationCustom01" class="form-label">Package</label>
@@ -218,14 +218,47 @@
 
             <div class="col-md ">
               <div class="text-start dev">
-              <label for="validationCustom01" class="form-label">Amount</label>
+                <div class="d-flex justify-content-between">
+                  <label for="validationCustom01" class="form-label">Amount</label>
+                  <div id="selectedIcons" class="selected-icons"></div>
+                </div>
+             
               <input type="tel" class="form-control dev" id="number" name="phone" placeholder="Enter amount e.g. 101" required>
               </div>
             </div>
-          
-
-            <button type="submit" class="btn custom-bg ">Send Message</button>
         </form>
+
+       
+
+
+      <div class="container">
+        <div class="gap-4 text-start">
+          <label for="selectedIcons">Account Type</label>
+      
+          <div class="d-flex gap-4 mt-3" id="iconRow">
+            <div class="col-md">
+              <img src="/img/bitcoin-logo-svgrepo-com.svg" alt="" class="size icon-option" data-icon="fa-bitcoin">
+            </div>
+            <div class="col-md">
+              <img src="/img/ethereum-svgrepo-com.svg" alt="" class="size icon-option" data-icon="fa-ethereum">
+            </div>
+            <div class="col-md">
+              <img src="/img/ripple.svg" alt="" class="size icon-option" data-icon="fa-ripple">
+            </div>
+            <div class="col-md">
+              <img src="/img/tether.svg" alt="" class="size icon-option" data-icon="fa-tether">
+            </div>
+            <div class="col-md">
+              <img src="/img/solana.svg" alt="" class="size icon-option" data-icon="fa-solana">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <button type="submit" class="btn  custom-bttn"><a  class="custom-links custom-bttn" href="/main/Dashboard.html">Continue</a></button>
+
        </div>
 
      </div>
@@ -251,6 +284,34 @@
       button.classList.add('active');
       }
     </script>
+
+          <script>
+          // Add click event listener to the icon options
+          document.querySelectorAll('.icon-option').forEach(function(icon) {
+            icon.addEventListener('click', function() {
+              // Toggle the 'selected' class on click
+              this.classList.toggle('selected');
+
+              // Update the selected icons display
+              updateSelectedIcons();
+            });
+          });
+
+          // Function to update the selected icons display
+          function updateSelectedIcons() {
+            var selectedIcons = [];
+            document.querySelectorAll('.icon-option.selected').forEach(function(selectedIcon) {
+              selectedIcons.push('<img src="/img/' + selectedIcon.getAttribute('data-icon') + '.svg" alt="" class="size">');
+            });
+
+            var selectedIconsDisplay = document.getElementById('selectedIcons');
+            if (selectedIcons.length > 0) {
+              selectedIconsDisplay.innerHTML = selectedIcons.join(' ');
+            } else {
+              selectedIconsDisplay.innerHTML = '';
+            }
+          }
+          </script>
   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
