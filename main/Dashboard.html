@@ -12,7 +12,17 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -240,20 +250,36 @@
        
     </div>
 
-
-
-
-
-
-
-
-    
-    <!------------- main container -------------->
-    <div class="content">
-        <p>dashboard</p>
-    </div>
   </div>
 
+
+   <!------------- main container -------------->
+   <div class="content">
+    
+    <div class="container">
+      <div class="row custom-back p-3 rounded">
+        <div class="col-md border-left border-3 border-danger justify-content-center gn-items-center">
+          
+          <div>
+            <p>You have Stacked:</p>
+            <p class="custom-bg">$380.93</p>
+          </div>
+          <div class="input-group d-flex align-items-center justify-content-center">
+            <input type="text" id="urlInput" class="p-2 w-3" value="https://example.com" readonly>
+            <button class="btn btn-primary " onclick="copyUrl()">Copy URL</button>
+          </div>
+        </div>
+
+
+        <div class="col-md">         
+            <p> 🚀 Celebrating 5 Months of Online Triumph! </p>
+             <p class="">In the spirit of our phenomenal success in trading over the past 5 months, we're thrilled to unveil not one, not two, but THREE extraordinary SUPER plans! 🌟 Brace yourselves for an adventure into unprecedented opportunities and rewards!</p>
+              <p>That's not all—our Ranks and Rewards system has undergone a thrilling transformation, promising you an even more thrilling journey to success with your team ✨</p>
+            </div>
+      </div>
+    </div>
+
+   </div>
   
   <script>
     function openNav() {
@@ -270,6 +296,13 @@
     
     document.querySelectorAll('.buttons').forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
+    }
+
+    function copyUrl() {
+      var urlInput = document.getElementById("urlInput");
+      urlInput.select();
+      urlInput.setSelectionRange(0, 99999); 
+      alert("URL copied: " + urlInput.value);
     }
   </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -80,7 +80,17 @@
   
   
     .custom-bg {
-      background-color: #55FE66; /* Your custom background color */
+      background-color: #62ad69;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 30px;
+      width: 8rem;
+      display: flex;
+      font-size: 18px;
+      align-items: center;
+      justify-content: center;
+      border-width: 10px;
+      border: 2px solid  #00ff22;
     }
   
     .custom-bold {
@@ -210,3 +220,15 @@
  .pol {
   margin-top: 4rem;
  }
+
+ .outlined {
+  background-color: #55FE6650;
+  color: #ffff;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 10px;
+}
+.bards {
+  width: 35px;
+  height: 35px;
+}
