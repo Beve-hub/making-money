@@ -299,7 +299,7 @@
   
       <div class="col-md custom-back rounded"> 
 
-        <div class="d-flex gap-2 p-3">
+        <div class="row gap-2 p-3">
           <div class="col-md">
             <p>Revenue</p>
           </div>
@@ -321,10 +321,34 @@
       
        </div>
   
+      </div>
+      
+       <!------------- bottom chart container -------------->
+     <div class="container">
+      
+      <div class="col-md custom-back rounded"> 
+
+        <div class="row gap-2 p-3">
+          <div class="col-md">
+            <p>Portfolio Summary</p>
+          </div>
+          <div class="col-md d-flex align-items-center">
+            <p class="dot"></p>
+            <p>Current Week  $58,211</p>
+          </div>
+          <div class="col-md d-flex align-items-center">
+            <p class="dots"></p>
+            <p>Previous Week  $68,768</p>
+          </div>
+        </div>
+
+        <div class="flip">
+          <canvas id="topChart" class="line-chart"></canvas>
+        </div>
+      </div>
+      
+  
     </div>
-
-
-    
 
   </div>
     
