@@ -248,11 +248,11 @@
 .line-chart {
   width:80%;
   height:100%;
-  max-width:700px;
+  max-width:600px;
   display: flex;
   align-items:center;
   justify-content:center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .top-chart {
