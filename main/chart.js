@@ -20,7 +20,7 @@ new Chart("myChart", {
   options: {
     title: {
       display: true,
-      text: "Today's Earning"
+      text: "Today's "
     }
   }
 });
