@@ -242,11 +242,27 @@
   justify-content:center;
 }
 .pie-chart {
-  width:40%;
-  max-width:300px;
-  max-height:300px;
+ 
+  max-width:400px;
+  max-height:400px;
 }
 .line-chart {
   width:100%;
+  height:100%;
   max-width:600px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.top-chart {
+  width:100%;
+  max-width:600px;
+}
+
+.pack {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  width: 700px;
 }

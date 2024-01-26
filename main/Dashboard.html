@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <title>money maker</title>
     
 </head>
@@ -125,7 +128,7 @@
   </div>
 
   <!-- Navbar -->
-  <div class="d-flex align-items-center justify-content-between custom-backs ">
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
     <div class="d-flex align-items-center">
         
   <div class="content d-block d-sm-none kicks" id="main">
@@ -285,7 +288,7 @@
     <div class="container">
       <div class="row  py-2 gap-3 ">
 
-        <div class="col-md-4 custom-back rounded">
+        <div class="col-md-4 custom-back rounded py-2">
        <p>Today's Earnings</p>
        
        <div class="chart p-2">
@@ -305,13 +308,23 @@
   
     </div>
 
-      
+
+    <!------------- bottom chart container -------------->
+    <div class="container p-2">
+      <div class="col-md custom-back rounded p-2">   
+        <div class="pack">
+          <canvas id="topChart" class="top-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
   </div>
     
   
 
 
   <script src="line-chart.js"></script>
+  <script src="Top-chart.js"></script>
   
   <script>
     function openNav() {
