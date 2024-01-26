@@ -242,12 +242,11 @@
   justify-content:center;
 }
 .pie-chart {
- 
   max-width:400px;
   max-height:400px;
 }
 .line-chart {
-  width:100%;
+  width:80%;
   height:100%;
   max-width:700px;
   display: flex;
