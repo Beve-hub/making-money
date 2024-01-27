@@ -19,7 +19,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 99;
     top: 0;
     left: 0;
     background-color: #2c2c2c;
@@ -65,7 +65,7 @@
   .content {
     transition: margin-left 0.5s;
     display: grid;
-    gap: 10px;
+    gap: 20px;
   }
 
   /* Responsive media query to make the sidebar visible on small screens */
@@ -76,8 +76,62 @@
   
   
   .custom-color {
-      color: #55FE66; /* Your custom color code */
+      color: #55FE66; 
     }
+
+    .custom-colors {
+      background-color: #55FE66; 
+      color: #fff; 
+      border-radius:20px;
+      margin-bottom: 20px;
+      width: 10rem;
+    }
+
+    .custom-backons {
+      background-color: #282828;
+      border: none;
+    }
+
+
+    .custom-coloren{
+      background-color: #55FE66; 
+      color: #fff; 
+      border-radius:20px;
+      margin-bottom: 20px;
+      width: 10rem;
+    }
+
+    .custom-colorens{
+      background-color: #000000; 
+      color: #fff; 
+      border-radius:20px;
+      margin-bottom: 20px;
+      width: 10rem;
+    }
+
+    .custom-colorenss{
+      background-color: #000000; 
+      color: #fff; 
+      border-radius:20px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 8rem;
+      padding: 10px;
+    }
+
+ 
+    .custom-color-red {
+      color: #ff2b2b; /* Your custom color code */
+    }
+
+
+    .custom-fant {
+      background-color:rgba(148, 236, 157, 0.062);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
     .custom-blue {
       color:  #00E0FF;
    }
@@ -99,9 +153,83 @@
     .custom-bold {
       font-weight: bold;
     }
+
+    .custom-normal {
+      font-weight: normal;
+    }
+    
+    .custom-light {
+      font-weight: lighter;
+    }
+    
+    .custom-italic {
+      font-style: italic;
+    }
+  
+    .custom-font-size-30 {
+      font-size: 30px;
+    }
+
+    .custom-font-size-26 {
+      font-size: 26px;
+    }
+
+    .custom-font-size-24 {
+      font-size: 24px;
+    }
+
+    .custom-font-size-22 {
+      font-size: 22px;
+    }
+    .custom-font-size-20 {
+      font-size: 20px;
+    }
+  
+    .custom-font-size-18 {
+      font-size: 18px;
+    }
+    .custom-font-size-16 {
+      font-size: 16px;
+    }
+    .custom-font-size-14 {
+      font-size: 14px;
+    }
+  
+    .custom-font-size-12 {
+      font-size: 12px;
+    }
+    .custom-font-size-10 {
+      font-size: 10px;
+    }
+  
+    .custom-font-size-8 {
+      font-size: 8px;
+    }
+    .custom-font-size-6 {
+      font-size: 6px;
+    }
+  
+    .custom-font-size-4 {
+      font-size: 4px;
+    }
+  
+    .custom-font-size-2 {
+      font-size: 2px;
+    }
+
+    .custom-height{
+      height:100px;
+    }
     .custom-back {
       background-color: #242424;
       border: none;
+    }
+
+    .custom-black {
+      background-color: #24242466;
+      border: none;
+      gap:10px;
+      margin: 5px;
     }
 
     .custom-backon {
@@ -260,7 +388,7 @@
   height:100%;
   max-width:1000px;
   max-height:300px;
-  display: flex;
+   display: flex;
   align-items:center;
   justify-content:center;
   margin-top: 20px;
@@ -287,4 +415,63 @@
   width:10px;
   height:10px;
   margin-right:5px;
+}
+
+.cuton {
+  background-color:#1f2121ee;
+  position:absolute;
+  top:0;
+  width:100%;
+  height: 15rem;
+  border-radius: 0 0px  20px 20px ;
+}
+
+.cutons {
+  background-color:#2c5959e1;
+  position:absolute;
+  top:0;
+  width:100%;
+  height: 15rem;
+  border-radius: 0 0px  20px 20px ;
+}
+
+.cuto {
+  background-color:#49057dec;
+  position:absolute;
+  top:0;
+  width:100%;
+  height: 15rem;
+  border-radius: 0 0px  20px 20px ;
+}
+
+.age {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+.custom-size {
+  width: 24rem;
+}
+.aged {
+   width:16rem;
+  height:16rem;
+}
+
+.custom-bin {
+  color: #3e3e3e;
+  font-size: 14px;
+}
+
+
+.card-item {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.card-item:hover {
+  transform: scale(1.1);
 }

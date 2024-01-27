@@ -80,7 +80,7 @@
                     <i class="bi bi-person"></i>Account Manager <i class="bi bi-chevron-compact-down"></i>
                    </button>
                    <div class="collapse " id="collapseExample12">
-                     <div class="card dave">
+             #fc0606 <div class="card dave">
                          <a class="" href="Profile.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Profile</a>
                          <a class="" href="Wallet.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawal wallet</a>
                          <a class="" href="Security.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Security</a>
@@ -262,13 +262,13 @@
     
      <!-------------stack -------------->
     <div class="container">
-      <div class="row custom-back p-1 rounded">
+      <div class="row custom-back  rounded">
         <div class="col-md-4">
           <p>You have Stacked:</p>
           <p class="custom-bg">$380.93</p>
             <div class="input-group mb-3">
             <input type="text" class="form-control"  id="urlInput" placeholder="https://app.101moneymaker.com/register/?sponsor=victorokeke89" aria-label="Recipient's username" aria-describedby="button-addon2" value="https://example.com" readonly>
-            <button class="btn btn-primary " onclick="copyUrl()"type="button" >Button</button>
+            <button class="btn btn-primary " onclick="copyUrl() "type="button" >Button</button>
           </div>
      
       </div>
@@ -280,7 +280,6 @@
 
       
        </div>
-
     </div>
 
 
@@ -322,33 +321,226 @@
        </div>
   
       </div>
-      
-       <!------------- bottom chart container -------------->
-     <div class="container">
-      
-      <div class="col-md custom-back rounded"> 
+    
+     
+   <!------------- coin card container -------------->
+   <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
 
-        <div class="row gap-2 p-3">
-          <div class="col-md">
-            <p>Portfolio Summary</p>
+      <!------------- coin card 1 -------------->
+      <div class="col custom-size ">
+        <div class="card h-100 custom-back">
+          <div class="age">
+            <img src="/img/tether.svg"  alt="..." class="aged">
           </div>
-          <div class="col-md d-flex align-items-center">
-            <p class="dot"></p>
-            <p>Current Week  $58,211</p>
+          <div class="cutons">
+            <h5 class="p-4">ERC20 Summary</h5>
+
+            <div class="d-grid text-center align-items-center justify-content-center mt-4 ">
+              <div>
+                <p class="custom-font-size-14">Balance</p>
+                <h3 class="custom-bold ">$0.00</h3>
+                <p>~0.00 BUSD</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md d-flex align-items-center">
-            <p class="dots"></p>
-            <p>Previous Week  $68,768</p>
+          
+          <div class="card-body">
+
+
+           <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+            <img src="/img/wallet.svg" alt="" class="custom-fant ">  
+            <p class="mt-3">Deposit</p>
+          </div>
+            <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+          </div> 
+
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+            <img src="/img/invest.svg" alt="" class="custom-fant ">  
+            <p class="mt-3">Reinves</p>
+          </div>
+            <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+          </div> 
+
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+            <img src="/img/bag.svg" alt="" class="custom-fant ">  
+            <p class="mt-3">Earnings </p>
+          </div>
+            <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+          </div> 
+
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+            <img src="/img/drip.svg" alt="" class="custom-fant ">  
+            <p class="mt-3">Withdrawals</p>
+          </div>
+            <p class="mt-2">$0.00<span class="custom-color-red"><i class="bi bi-arrow-down-short"></i></span></p>
+          </div> 
+
+          
+          </div>
+          
+
+          
+          
+        </div>
+      </div>
+    
+     <!------------- coin card 2 -------------->
+     <div class="col  custom-size ">
+      <div class="card h-100 custom-back">
+        <div class="age">
+          <img src="/img/tether.svg"  alt="..." class="aged">
+        </div>
+        <div class="cuto">
+          <h5 class="p-4">BEP20 Summary</h5>
+
+          <div class="d-grid text-center align-items-center justify-content-center mt-4 ">
+            <div>
+              <p class="custom-font-size-14">Balance</p>
+              <h3 class="custom-bold ">$0.00</h3>
+              <p>~0.00 USDT</p>
+            </div>
           </div>
         </div>
+        
+        <div class="card-body">
 
-        <div class="flip">
-          <canvas id="topChart" class="lined-chart"></canvas>
+
+         <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+          <img src="/img/wallet.svg" alt="" class="custom-fant ">  
+          <p class="mt-3">Deposit</p>
+        </div>
+          <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+        </div> 
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+          <img src="/img/invest.svg" alt="" class="custom-fant ">  
+          <p class="mt-3">Reinves</p>
+        </div>
+          <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+        </div> 
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+          <img src="/img/bag.svg" alt="" class="custom-fant ">  
+          <p class="mt-3">Earnings </p>
+        </div>
+          <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+        </div> 
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+          <img src="/img/drip.svg" alt="" class="custom-fant ">  
+          <p class="mt-3">Withdrawals</p>
+        </div>
+          <p class="mt-2">$0.00<span class="custom-color-red"><i class="bi bi-arrow-down-short"></i></span></p>
+        </div> 
+
+        
+        </div>
+        
+
+        
+        
+      </div>
+    </div>
+  <!------------- coin card 3 -------------->
+  <div class="col  custom-size  ">
+    <div class="card h-100 custom-back">
+      <div class="age">
+        <img src="/img/tether.svg"  alt="..." class="aged" >
+      </div>
+      <div class="cuton">
+        <h5 class="p-4">TRC20 Summary</h5>
+
+        <div class="d-grid text-center align-items-center justify-content-center mt-4 ">
+          <div>
+            <p class="custom-font-size-14">Balance</p>
+            <h3 class="custom-bold ">$0.00</h3>
+            <p>~0.00 USDT</p>
+          </div>
         </div>
       </div>
       
-  
+      <div class="card-body">
+
+
+       <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+        <img src="/img/wallet.svg" alt="" class="custom-fant ">  
+        <p class="mt-3">Deposit</p>
+      </div>
+        <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+      </div> 
+
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+        <img src="/img/invest.svg" alt="" class="custom-fant ">  
+        <p class="mt-3">Reinves</p>
+      </div>
+        <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+      </div> 
+
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+        <img src="/img/bag.svg" alt="" class="custom-fant ">  
+        <p class="mt-3">Earnings </p>
+      </div>
+        <p class="mt-2">$0.00<span class="custom-color"><i class="bi bi-arrow-up-short"></i></span></p>
+      </div> 
+
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+        <img src="/img/drip.svg" alt="" class="custom-fant ">  
+        <p class="mt-3">Withdrawals</p>
+      </div>
+        <p class="mt-2">$0.00<span class="custom-color-red"><i class="bi bi-arrow-down-short"></i></span></p>
+      </div> 
+
+      
+      </div>
+      
+
+      
+      
     </div>
+  </div>
+      
+    </div>
+
+    </div>
+
+     
+      <!------------- bottom chart container -------------->
+      <div class="container">
+      
+        <div class="col-md custom-back rounded"> 
+  
+          <div class="row gap-2 p-3">
+            <div class="col-md">
+              <p>Portfolio Summary</p>
+            </div>
+            <div class="col-md d-flex align-items-center">
+              <p class="dot"></p>
+              <p>Current Week  $58,211</p>
+            </div>
+            <div class="col-md d-flex align-items-center">
+              <p class="dots"></p>
+              <p>Previous Week  $68,768</p>
+            </div>
+          </div>
+  
+          <div class="flip">
+            <canvas id="topChart" class="lined-chart"></canvas>
+          </div>
+        </div> 
+
 
   </div>
     
