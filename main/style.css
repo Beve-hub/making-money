@@ -92,7 +92,11 @@
       border: none;
     }
 
-
+    .custom-backonst {
+      background-color: #28282868;
+      border: none;
+      border-radius:20px;
+    }
     .custom-coloren{
       background-color: #55FE66; 
       color: #fff; 
