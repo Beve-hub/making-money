@@ -285,19 +285,81 @@
         </div>
       </div>
 
-      <div class="d-flex align-items-end justify-content-between">
+
+      <div class=" container ">
+
+        <div>
+          
+        </div>
+
+        <div class="d-flex align-items-end justify-content-between">
         <div class="text-start ">
-          <p>Set amount to Invest</p>
-          <p class="text-wrap">Investments will be active for 101 calendar days.</p>
+          <p class="custom-font-size-20">Set amount to <span class="custom-color">Invest</span></p>
+          <p class="text-wrap custom-font-size-14">Investments will be active for 101 calendar days.</p>
         </div>
         <div>
-          <p>$101 minimum investment</p>
+          <p class="custom-color-red  custom-font-size-12">$101 minimum investment</p>
         </div>
         
-      </div>
-      </div>
+        </div>
+        <div class="col-md">
+          <label  class="form-label">Package</label>
+          <select class="form-select custom-back text-light " aria-label="Default select example">
+            <option selected>Select your package ....</option>
+            <option value="1">Starters plan</option>
+            <option value="2">Professional plan</option>
+            <option value="3">Company plan</option>
+          </select>
+        </div>
 
-  </div>
+       
+        <div class="mb-3">
+          <label for="amount" class="form-label">Amount</label>
+          <input type="number"  class="form-select custom-back text-light " id="amount" placeholder="Enter amount e.g. 101" name="amount" step="0.01" required>
+          <div id="selectedCrypto" class="hidden">
+              <img id="displayedIcon" alt="Selected Crypto">
+            </div>
+        </div>
+       
+        <div class="mb-3">
+          <label for="amount" class="form-label">Account Type</label>
+
+
+          <div class="crypto-icons ">
+            <!-- Crypto icons go here -->
+            
+           <div class="crypto-icon ">
+            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
+            <p class="custom-font-size-14">TRC20</p>
+           </div>
+
+           <div class="crypto-icon ">
+            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
+            <p class="custom-font-size-14">BEP20</p>
+           </div>
+
+           <div class="crypto-icon ">
+            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
+            <p class="custom-font-size-14">ERC20</p>
+           </div>
+
+           <div class="crypto-icon ">
+            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
+            <p class="custom-font-size-14">BUSD</p>
+           </div>
+
+          </div>
+        </div>
+
+        <div class="d-flex justify-contntet-end align-items-end mt-5">
+          <button type="submit" class="btn custom-colors">Continue</button>
+        </div>
+      </div>
+         
+
+
+    
+       </div>
 
   
   <script>
@@ -316,6 +378,27 @@
     document.querySelectorAll('.buttons').forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
     }
+  </script>
+
+  <script>
+    const cryptoImages = document.querySelectorAll('.crypto-image');
+const selectedCryptoContainer = document.getElementById('selectedCrypto');
+const displayedIcon = document.getElementById('displayedIcon');
+const clearSelectionBtn = document.getElementById('clearSelection');
+
+cryptoImages.forEach(image => {
+  image.addEventListener('click', function() {
+    const selectedCrypto = this.dataset.crypto;
+    displayedIcon.src = `${selectedCrypto.toLowerCase()}.png`;
+    selectedCryptoContainer.classList.remove('hidden');
+  });
+});
+
+clearSelectionBtn.addEventListener('click', function() {
+  displayedIcon.src = '';
+  selectedCryptoContainer.classList.add('hidden');
+});
+
   </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
