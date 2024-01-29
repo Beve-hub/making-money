@@ -79,6 +79,35 @@
       color: #55FE66; 
     }
 
+    .search-container {
+      text-align: flex-end;
+    }
+
+    .search-input {
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      width: 250px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .search-input:focus {
+      border-color: #3498db;
+    }
+
+    .search-button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #55FE66; 
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
     .custom-colors {
       background-color: #55FE66; 
       color: #fff; 
@@ -697,3 +726,5 @@ input:focus {
   color:#d600fc;
   font-weight: bold;
  }
+
+
