@@ -741,12 +741,11 @@ tr {
 }
 
 thead td {
-  font-size:14px;
-  text-align: start;
+ text-align: start;
   padding: 15px;
 }
 
-tbody tr td th {
+tbody {
   padding: 10px 15px;
   font-size:8px;
 }
@@ -762,3 +761,20 @@ tbody tr td th {
 .stud{
   font-size: 12px;
 } 
+.stip {
+  font-size: 14px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+}
+
+.search-container input {
+ background-color: #242424;
+ width: 250px;
+ border-radius: 20px;
+  }
