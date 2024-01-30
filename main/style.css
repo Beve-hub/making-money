@@ -79,6 +79,10 @@
       color: #55FE66; 
     }
 
+    .custom-color-dark {
+      color: #858685; 
+    }  
+
     .search-container {
       text-align: flex-end;
     }
@@ -777,3 +781,9 @@ tbody {
  width: 170px;
  border-radius: 20px;
   }
+
+
+  .dashed-border {
+    border: 1px dashed #919090; 
+    padding: 10px; 
+}

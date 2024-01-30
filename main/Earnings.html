@@ -12,7 +12,16 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -28,7 +37,7 @@
             <button class="custom-sidebar button  active" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10"  onclick="activateButton(this)">
                <i class="bi bi-bar-chart"></i>Statistic Report<i class="bi bi-chevron-compact-down"></i>
               </button>
-              <div class="collapse custom-back" id="collapseExample10">
+              <div class=" custom-back" id="collapseExample10">
                 <div class="card dave ">
                     <a class="" href="Report.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
                     <a class="active" href="Earnings.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
@@ -114,7 +123,7 @@
   </div>
 
   <!-- Navbar -->
-  <div class="d-flex align-items-center justify-content-between custom-backs ">
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
     <div class="d-flex align-items-center">
         
   <div class="content d-block d-sm-none kicks" id="main">
@@ -160,7 +169,7 @@
                 <button class="custom-back button active" data-toggle="collapse" data-target="#collapseExample0" aria-expanded="false" aria-controls="collapseExample0"  onclick="activateButton(this)">
                    <i class="bi bi-bar-chart"></i>Statistic Report<i class="bi bi-chevron-compact-down"></i>
                   </button>
-                  <div class="collapse custom-back" id="collapseExample0">
+                  <div class=" custom-back" id="collapseExample0">
                     <div class="card dave">
                         <a class="buttonst " href="Report.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
                         <a class="buttonst  active" href="Earnings.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
@@ -249,9 +258,113 @@
 
     
     <!------------- main container -------------->
-    <div class="content">
-        <p>Earning</p>
-    </div>
+    <div class="content overflow-sm-hidden">
+      <div>
+        <h1 class="custom-bold">Investment<span class="custom-color ">Report</span></h1>
+        <p class="text-wrap">All reports will be shown here.</p>
+      </div>
+  
+      <div class=" container ">
+  
+        <div class="custom-backonst   ">
+          <h5>Balance</h5>
+          <div class="row justify-content-center gap-3 mt-2">
+  
+            <div class="col-md">
+              <div class="busd">
+                <div class="">
+                  <p class="busd-text">Direct Earnings</p>
+                  <p class="custom-bold">$0.00 <span class="lop">0% of total</span></p>
+                </div>
+               <div class="progress-container">
+                  <progress id="progress-bar" value="0" max="100" class="progress-busd"></progress>
+                </div>
+              </div>
+  
+              
+            </div>
+  
+            <div class="col-md">
+              <div class="trc">
+                <div class="">
+                  <p class="trc-text">Capital Back</p>
+                  <p class="custom-bold">$0.00 <span class="lop">0% of total</span></p>
+                </div>
+               <div class="progress-container">
+                  <progress id="progress-bar0" value="0" max="100" class="progress-trc"></progress>
+                </div>
+              </div>
+  
+              
+            </div>
+  
+            <div class="col-md">
+              <div class="bep">
+                <div class="">
+                  <p class="bep-text">Total</p>
+                  <p class="custom-bold">$0.00 <span class="lop">0% of total</span></p>
+                </div>
+               <div class="progress-container">
+                  <progress id="progress-bar1" value="0" max="100" class="progress-bep"></progress>
+                </div>
+              </div>
+  
+              
+            </div>
+  
+            
+            
+          </div>
+     
+          
+            
+         </div>
+  
+         <div class="custom-blackonst   mt-5">
+          <div class="row justify-content-between py-3">
+            <div class="col-md">
+              <p class="custom-bold px-3">Earnings <span class="custom-color">History</span></p>
+            </div>
+            
+            <div class="col-md search-container ">
+              <input class=" d-none d-sm-block" type="search" placeholder="Search..." aria-label="Search">
+            </div>
+            
+          </div>
+  
+          <div class="table-responsive-sm m-3" id="history-container">
+            <table class="table text-light">
+              <thead>
+                <tr>
+                  <th scope="col" class="stip">Tax ID</th>
+                  <th scope="col" class="stip">Amount</th>
+                  <th scope="col" class="stip">Method</th>
+                  <th scope="col" class="stip">Date</th>
+                  <th scope="col" class="stip">Status</th>
+                </tr>
+              </thead>
+              <tbody id="history-body">
+                <tr>
+                  <td class="stud">1567s76d</td>
+                  <td class="stud">$300</td>
+                  <td class="stud">Trc20</td>
+                  <td class="stud">20,Jan 2024</td>
+                  <td class="status">
+                    <p>Pending</p>
+                  </td>
+                </tr>
+             </tbody>
+            </table>
+          </div>
+         </div>
+   
+        </div>
+  
+      
+  
+      </div>
+
+
   </div>
 
   

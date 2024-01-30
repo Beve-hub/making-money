@@ -170,7 +170,7 @@
                 <button class="custom-back button active" data-toggle="collapse" data-target="#collapseExample0" aria-expanded="true" aria-controls="collapseExample0"  onclick="activateButton(this)">
                    <i class="bi bi-bar-chart"></i>Statistic Report<i class="bi bi-chevron-compact-down"></i>
                   </button>
-                  <div class="collapse custom-back" id="collapseExample0">
+                  <div class=" custom-back" id="collapseExample0">
                     <div class="card dave">
                         <a class="buttonst active" href="Report.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
                         <a class="buttonst " href="Earnings.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
@@ -259,7 +259,7 @@
 
     
    <!------------- main container -------------->
-   <div class="content">
+   <div class="content overflow-sm-hidden">
     <div>
       <h1 class="custom-bold">Investment<span class="custom-color ">Report</span></h1>
       <p class="text-wrap">All of your transactions and account balance will show here.</p>
@@ -328,12 +328,12 @@
           </div>
           
           <div class="col-md search-container ">
-            <input class=" d-none d-sm-block" type="search" placeholder="Search your deposit ..." aria-label="Search">
+            <input class=" d-none d-sm-block" type="search" placeholder="Search ..." aria-label="Search">
           </div>
           
         </div>
 
-        <div class="table-responsive-sm m-3">
+        <div class="table-responsive-sm m-3" id="history-container">
           <table class="table text-light">
             <thead>
               <tr>
@@ -344,7 +344,7 @@
                 <th scope="col" class="stip">Status</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="history-body">
               <tr>
                 <td class="stud">1567s76d</td>
                 <td class="stud">$300</td>
