@@ -12,7 +12,16 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -51,7 +60,7 @@
                 <button class="custom-sidebar button active" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11"  onclick="activateButton(this)">
                     <i class="bi bi-people"></i>Team Network  <i class="bi bi-chevron-compact-down"></i>
                    </button>
-                   <div class="collapse " id="collapseExample11">
+                   <div class=" " id="collapseExample11">
                      <div class="card dave">
                          <a class="active" href="Summary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Live Summary</a>
                          <a class="" href="Sponsor.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> My sponsor</a>
@@ -177,10 +186,10 @@
             <div class="">
 
                 <div>
-                    <button class="custom-back button active" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"  onclick="activateButton(this)">
+                    <button class="custom-back button " data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"  onclick="activateButton(this)">
                         <i class="bi bi-people"></i>Team Network  <i class="bi bi-chevron-compact-down"></i>
                        </button>
-                       <div class="collapse " id="collapseExample1">
+                       <div class=" " id="collapseExample1">
                          <div class="card dave">
                              <a class="buttonst active" href="Summary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Live Summary</a>
                              <a class="buttonst " href="Sponsor.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> My sponsor</a>
@@ -241,17 +250,82 @@
     </div>
 
 
-
-
-
-
-
-
+     
+     <!------------- main container -------------->
+     <div class="content">
     
-    <!------------- main container -------------->
-    <div class="content">
-        <p>Live summary</p>
+
+      <div>
+        <h1 class="custom-bold">Account<span class="custom-color ">Summary</span></h1>
+      </div>
+
+
+     <!-------------stack -------------->
+    <div class="container  ">
+      <div class="row custom-back d-flex justify-content-center align-items-center rounded p-4">
+        <div class="col-md-2">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="/img/profile.png" alt="" class="w-75">
+          </div>
+        </div>
+      <div class="col-md">         
+            <p class="custom-color custom-font-size-20 "> Frank Muller </p>
+            <div class="d-flex gap-3 ">
+              <p class="text-bg-secondary"><i class="bi bi-person-circle"></i> UID: 3822659595</p>
+              <p class="text-bg-secondary"><i class="bi bi-geo-alt"></i> Austerlia</p>
+              <p class="text-bg-secondary"><i class="bi bi-envelope"></i> frankmuller@gmail.com</p>
+            </div>
+             
+      </div>
+
+      
+       </div>
     </div>
+
+     <!-------------details -------------->
+     <div class="container ">
+      <div class="row custom-back d-flex justify-content-center align-items-center rounded p-4 gap-3">
+
+        <div class="col text-center dashed-border  rounded p-2">
+          <p class="custom-font-size-14 custom-back rounded p-2"><span class="custom-color"><i class="bi bi-arrow-up-short"></i></span>0</p>
+          <p class="cus custom-color-dark custom-font-size-10">Team Member </p>
+        </div>
+
+        <div class="col text-center dashed-border  rounded p-2">
+          <p class="custom-font-size-14 custom-back rounded p-2"><span class="custom-color"><i class="bi bi-arrow-up-short"></i></span>$0.00</p>
+          <p class="cus custom-color-dark custom-font-size-10">Team deposit</p>
+        </div>
+
+        <div class="col text-center dashed-border  rounded p-2">
+          <p class="custom-font-size-14 custom-back rounded p-2"><span class="custom-color"><i class="bi bi-arrow-up-short"></i></span>$0.00</p>
+          <p class="cus custom-color-dark custom-font-size-10">Rank Deposit</p>
+        </div>
+
+        <div class="col text-center dashed-border  rounded p-2">
+          <p class="custom-font-size-14 custom-back rounded p-2"><span class="custom-color"><i class="bi bi-arrow-up-short"></i></span>$0.00</p>
+          <p class="cus custom-color-dark custom-font-size-10">Referral Earnings</p>
+        </div>
+        
+        <div class="col text-center dashed-border  rounded p-2">
+          <p class="custom-font-size-14 custom-back rounded p-2"><span class="custom-color"><i class="bi bi-arrow-up-short"></i></span>$0.00</p>
+          <p class="cus custom-color-dark custom-font-size-10">Rank Rewards</p>
+        </div>
+
+       </div>
+     </div>
+
+
+      <!-------------details -------------->
+      <div class="container ">
+        
+       </div>
+
+     
+     
+     
+  </div>
+
+
   </div>
 
   
