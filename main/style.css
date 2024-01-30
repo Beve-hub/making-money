@@ -819,3 +819,25 @@ tbody {
     border: 1px dashed #919090; 
     padding: 10px; 
 }
+
+
+.material-symbols-outlined {
+ font-size:40px;
+}
+
+.button-link {
+  color: #ffffff; /* Set your text color */
+  text-decoration: none; /* Remove underline for links */
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+ 
+.active.button-link {
+  border-bottom: 2px solid #00ff22;
+  padding: 5px 20px; 
+   border-radius: 20px;
+   color: #00ff22;
+}
