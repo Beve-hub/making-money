@@ -74,7 +74,10 @@
     .sidebar a {font-size: 16px;}
   }
   
-  
+  .custom-bg-color {
+    background-color: #55FE66; 
+    color: #fff
+  }
   .custom-color {
       color: #55FE66; 
     }
