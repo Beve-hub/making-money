@@ -12,7 +12,16 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -114,7 +123,7 @@
   </div>
 
   <!-- Navbar -->
-  <div class="d-flex align-items-center justify-content-between custom-backs ">
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
     <div class="d-flex align-items-center">
         
   <div class="content d-block d-sm-none kicks" id="main">
@@ -241,20 +250,141 @@
     </div>
 
 
-
-
-
-
-
-
-    
-    <!------------- main container -------------->
-    <div class="content">
-        <p>profile</p>
-    </div>
-  </div>
-
+ 
+       <!------------- main container -------------->
+       <div class="content overflow-sm-hidden gap-5">
+      
+      
+        <div>
+          <h1 class="custom-bold">Account<span class="custom-color ">Summary</span></h1>
+        </div>
   
+           <!-------------stack -------------->
+      <div class="container  ">
+        <div class="row custom-back  rounded p-3">
+          <div class="col-md-2">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="/img/profile.png" alt="" class="w-50">
+            </div>
+          </div>
+        <div class="col-md">         
+              <p class="custom-color custom-font-size-20 "> Frank Muller </p>
+              <div class="d-sm-flex gap-3 ">
+                <p class="text-bg-secondary custom-font-size-14"><i class="bi bi-person-circle"></i> UID: 3822659595</p>
+                <p class="text-bg-secondary custom-font-size-14"><i class="bi bi-geo-alt"></i> Austerlia</p>
+                <p class="text-bg-secondary custom-font-size-14"><i class="bi bi-envelope"></i> frankmuller@gmail.com</p>
+              </div>
+               
+        </div>
+  
+        
+         </div>
+      </div>
+  
+    
+               <!-------------details -------------->
+        <div >
+          <div class="custom-back  rounded p-4">
+             
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email*</label>
+            <div class="col-sm-10">
+              <input type="text"  class="form-control profile-text w-75" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputFullname" class="col-sm-2 col-form-label">Fullname*</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control profile-text w-75" id="inputFullname">
+            </div>
+          </div>    
+           
+          <div class="mb-3 row">
+            <label for="inputPhoneNumber" class="col-sm-2 col-form-label">Contact Phone*</label>
+            <div class="col-sm-10">
+              <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control profile-text w-75" id="inputPhoneNumber">
+            </div>
+          </div> 
+          
+          <div class="mb-3 row">
+            <label for="country" class="col-sm-2 col-form-label">Country*</label>
+            <div class="col-sm-10">
+              <select   class="form-control profile-text w-75" id="country" name="country"></select>
+            </div>
+          </div> 
+
+          <div class="mb-3 row">
+            <label for="countryCurrency" class="col-sm-2 col-form-label">Contact Phone*</label>
+            <div class="col-sm-10">
+              <select  class="form-control profile-text w-75" id="countryCurrency"></select>
+            </div>
+          </div> 
+  
+  
+          </div>  
+        </div>
+              
+         
+      
+  
+       </div>
+ <script>
+  function openProfilePictureUploader() {
+    const profilePictureInput = document.getElementById('profilePictureInput');
+    profilePictureInput.click();
+}
+
+document.getElementById('profilePictureInput').addEventListener('change', handleProfilePictureSelect);
+
+function handleProfilePictureSelect(event) {
+    const profilePicture = document.getElementById('profilePicture');
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            profilePicture.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+}
+ </script>
+ <script>
+  const currencySelect = document.getElementById('countryCurrency');
+
+  // Fetch the list of currencies from the ExchangeRatesAPI.io
+  fetch('https://api.exchangerate-api.com/v4/latest/USD')
+      .then(response => response.json())
+      .then(data => {
+          const currencies = Object.keys(data.rates);
+          currencies.forEach(currency => {
+              const option = document.createElement('option');
+              option.value = currency;
+              option.text = currency;
+              currencySelect.appendChild(option);
+          });
+      })
+      .catch(error => console.error('Error fetching currencies:', error));
+</script>
+<script>
+  const countrySelect = document.getElementById('country');
+
+  // Fetch the list of countries from the Restcountries API
+  fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(data => {
+          data.forEach(country => {
+              const option = document.createElement('option');
+              option.value = country.alpha3Code;
+              option.text = country.name.common;
+              countrySelect.appendChild(option);
+          });
+      })
+      .catch(error => console.error('Error fetching countries:', error));
+</script>
   <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";

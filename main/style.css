@@ -829,8 +829,8 @@ tbody {
   color: #ffffff; /* Set your text color */
   text-decoration: none; /* Remove underline for links */
   display: flex;
-  gap: 5px;
-  font-size: 12px;
+  gap: 10px;
+  font-size: 14px;
   transition: background-color 0.3s ease; /* Add smooth transition effect */
 }
 
@@ -844,11 +844,34 @@ tbody {
 
 
 
+.img-span {
+  background: #00ff22;
+  font-size: 10px;
+  border-radius: 10px;
 
-  
+}
+.img-size {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30px;
+}
 
-  
+.profile-text {
+  background-color: transparent;
+  color:#eef0f3;
+}
+
+#country {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #24242486; 
+  color: white; 
+}
 
 
-
-   
+#countryCurrency {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #24242486; 
+  color: white; 
+}
