@@ -832,8 +832,8 @@ tbody {
 }
 
 .button-link {
-  color: #ffffff; /* Set your text color */
-  text-decoration: none; /* Remove underline for links */
+  color: #ffffff; 
+  text-decoration: none; 
   display: flex;
   gap: 10px;
   font-size: 14px;
@@ -905,4 +905,12 @@ tbody {
   color:rgba(230, 230, 230, 0.732); 
   width: 90%;
   font-size:14px;
+}
+
+.dashed-borde {
+  border-bottom: 1px dashed #a4a4a4; 
+}
+.rip{
+  text-decoration: none; 
+  color: white; 
 }
