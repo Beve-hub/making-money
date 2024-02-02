@@ -892,6 +892,7 @@ tbody {
   width: 90%;
   text-align: start;
   justify-content: space-between;
+  font: size 16px;
   display: flex;
   padding-right: 15px;
   padding-left: 15px;
@@ -901,6 +902,7 @@ tbody {
 
 .fqa-items{
   background-color: #24242486; 
-  color:white; 
+  color:rgba(230, 230, 230, 0.732); 
   width: 90%;
+  font-size:14px;
 }

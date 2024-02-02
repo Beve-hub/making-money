@@ -12,7 +12,16 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -114,7 +123,7 @@
   </div>
 
   <!-- Navbar -->
-  <div class="d-flex align-items-center justify-content-between custom-backs ">
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
     <div class="d-flex align-items-center">
         
   <div class="content d-block d-sm-none kicks" id="main">
@@ -248,10 +257,68 @@
 
 
     
-    <!------------- main container -------------->
-    <div class="content">
-        <p>package</p>
-    </div>
+      <!------------- main container -------------->
+      <div class="content overflow-sm-hidden gap-5">
+      
+      
+        <div>
+          <h1 class="custom-bold">Contact <span class="custom-color ">Support</span></h1>
+        </div>
+  
+         
+               <!-------------details -------------->
+       
+          <div class="custom-back  rounded p-4">
+             <form >
+             
+
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email*</label>
+            <div class="col-sm-10">
+              <input type="text"  class="form-control profile-text w-75" id="staticEmail" value="contact@101moneymaker.com">
+            </div>
+          </div>
+
+          
+          <div class="mb-3 row">
+            <label for="subjectoption" class="col-sm-2 col-form-label">Subject*</label>
+            <div class="col-sm-10">
+              <select  class="form-control profile-text w-75" id="subjectoption">
+                <option selected>Investments and Balances</option>
+                <option >Withdrawals and Rewards</option>
+                <option >Change profile Data</option>
+                <option >Promotion and Offers</option>
+                <option >Affilliate</option>
+                <option >Legal Inquiries</option>
+              </select>
+            </div>
+          </div> 
+          
+
+          
+          <div class="mb-3 row">
+            <label for="messagearea" class="col-sm-2 col-form-label">Message*</label>
+            <div class="col-sm-10">
+              <textarea type="text"  class="form-control profile-text w-75" id="messagearea" value="email@example.com"></textarea>
+            </div>
+          </div>
+
+         
+          
+ 
+
+        </form>
+
+        <div class="d-flex gap-3 mt-4 align-items-end justify-content-end ">
+          <button type="button" class="btn btn-secondary">Discard</button>
+          <button type="button" class="btn custom-bg-color">Save</button>
+        </div>
+
+          </div>  
+     
+   
+  
+       </div>
   </div>
 
   
