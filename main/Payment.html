@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>money maker</title>
+    
+</head>
+<body>
+    <!-- navbar-Sidebar -->
+
+
+  <div class="sidebar" id="mySidebar">
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <!-- small screen navbar-Sidebar -->
+    <div class="d-grid align-items-center justify-content-center my-2 gap-5">
+        <div>
+        <div class="d-grid gap-1 ">
+            <a class="" href="Dashboard.html"><i class="bi bi-grid"></i> Dashboard</a>
+            <a class="" href="Package.html"><i class="bi bi-layers"></i> Packages</a>
+            <a class="active" href="Make.html"><i class="bi bi-briefcase"></i> Make Investment </a>
+            <a class="" href="Withdraw.html"><i class="bi bi-credit-card"></i> Withdraw</a>
+        </div>
+
+        <!-------------small screen staticstics -------------->
+        <div class="custom-sidebar my-2">
+            <button class="custom-sidebar button " data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10"  onclick="activateButton(this)">
+               <i class="bi bi-bar-chart"></i>Statistic Report<i class="bi bi-chevron-compact-down"></i>
+              </button>
+              <div class="collapse custom-back" id="collapseExample10">
+                <div class="card dave ">
+                    <a class="" href="Report.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
+                    <a class="" href="Earnings.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
+                    <a class="" href="Balance.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawals</a>
+                    <a class="" href="Affilate.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Affiliate</a>             
+                  </div>
+            </div>
+        </div> 
+        </div>
+
+        <div >
+            <div class="ml-3">
+                <p >Pages</p>
+            </div>
+        
+
+        <div class="">
+            <!-------------small screen Team Network -------------->
+            <div>
+                <button class="custom-sidebar button " data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11"  onclick="activateButton(this)">
+                    <i class="bi bi-people"></i>Team Network  <i class="bi bi-chevron-compact-down"></i>
+                   </button>
+                   <div class="collapse " id="collapseExample11">
+                     <div class="card dave">
+                         <a class="" href="Summary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Live Summary</a>
+                         <a class="" href="Sponsor.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> My sponsor</a>
+                                 
+                       </div>
+                 </div>
+            </div>
+
+            <!-------------small screen Account Manager -------------->
+            <div class="my-3">
+                <button class="custom-sidebar button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12"  onclick="activateButton(this)">
+                    <i class="bi bi-person"></i>Account Manager <i class="bi bi-chevron-compact-down"></i>
+                   </button>
+                   <div class="collapse " id="collapseExample12">
+                     <div class="card dave">
+                         <a class="" href="Profile.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Profile</a>
+                         <a class="" href="Wallet.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawal wallet</a>
+                         <a class="" href="Security.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Security</a>
+                         <a class="" href="Beneficiary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Beneficiary</a>             
+                       </div>
+                 </div>
+            </div>
+            
+            <!-------------small screen Plateform statistics -------------->
+            <div>
+                <button class="custom-sidebar button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13"  onclick="activateButton(this)">
+                    <i class="bi bi-diagram-3"></i>Plateform statistics<i class="bi bi-chevron-compact-down"></i>
+                   </button>
+                   <div class="collapse " id="collapseExample13">
+                     <div class="card dave">
+                         <a class="buttonst " href="Proof.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Proof of Earning</a>
+                         <a class="buttonst " href="Leader.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Leader Board</a>
+      
+                       </div>
+                 </div>
+            </div>
+
+        </div>
+        </div> 
+
+
+        <!-------------small screen help -------------->
+
+       <div class="pol">
+        <div>
+            <p>Help</p>
+        </div>
+       
+
+        <div class="d-grid gap-1">
+            <a class="buttonst " href="FAQ.html" onclick="activateButton(this)"> <i class="bi bi-question-octagon"></i>FQA</a> 
+            <a class="" href="Support.html" onclick="activateButton(this)"> <i class="bi bi-arrow-repeat"></i>Support</a> 
+            <a class="buttonst " href="/Login.html" onclick="activateButton(this)"> <i class="bi bi-box-arrow-left"></i>LogOut</a>  
+        </div>
+        
+       </div> 
+
+    </div>
+    
+  </div>
+
+  <!-- Navbar -->
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
+    <div class="d-flex align-items-center">
+        
+  <div class="content d-block d-sm-none kicks" id="main">
+    <span  class="kick" onclick="openNav()"><i class="bi bi-list"></i></span>
+  </div>
+
+  <div class="">
+    <img src="/img/Union.png" alt="" class="bar ">
+  </div>
+</div>
+
+  <div class="d-none d-sm-block ">
+    <div class="d-flex gap-3 ">
+        <div class="line">
+            <p  class="outline">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+       
+        <img src="/img/profile.png" alt="" class="bars ">
+      </div>
+  </div>
+  </div>
+
+  
+
+
+  <div class="main-container">
+
+    <!------------- sidebar -------------->
+    <div class="navbar-Sidebar d-none d-sm-block">
+
+
+        <div class="d-grid align-items-center justify-content-center my-5 gap-5">
+            <div>
+            <div class="d-grid gap-3">
+                <a class="button" href="Dashboard.html"><i class="bi bi-grid"></i> Dashboard</a>
+                <a class="button " href="Package.html"><i class="bi bi-layers"></i> Packages</a>
+                <a class="button active" href="Make.html"><i class="bi bi-briefcase"></i> Make Investment </a>
+                <a class="button" href="Withdraw.html"><i class="bi bi-credit-card"></i> Withdraw</a>
+            </div>
+
+            <!------------- staticstics -------------->
+            <div class="custom-back my-2">
+                <button class="custom-back button" data-toggle="collapse" data-target="#collapseExample0" aria-expanded="false" aria-controls="collapseExample0"  onclick="activateButton(this)">
+                   <i class="bi bi-bar-chart"></i>Statistic Report<i class="bi bi-chevron-compact-down"></i>
+                  </button>
+                  <div class="collapse custom-back" id="collapseExample0">
+                    <div class="card dave">
+                        <a class="buttonst " href="Report.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Investments</a>
+                        <a class="buttonst " href="Earnings.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Earnings</a>
+                        <a class="buttonst " href="Balance.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawals</a>
+                        <a class="buttonst " href="Affilate.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Affiliate</a>             
+                      </div>
+                </div>
+            </div> 
+            </div>
+
+            <div >
+            <p>Pages</p>
+
+            <div class="">
+
+                <div>
+                    <button class="custom-back button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"  onclick="activateButton(this)">
+                        <i class="bi bi-people"></i>Team Network  <i class="bi bi-chevron-compact-down"></i>
+                       </button>
+                       <div class="collapse " id="collapseExample1">
+                         <div class="card dave">
+                             <a class="buttonst " href="Summary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Live Summary</a>
+                             <a class="buttonst " href="Sponsor.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> My sponsor</a>
+                                     
+                           </div>
+                     </div>
+                </div>
+
+                <div class="my-3">
+                    <button class="custom-back button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2"  onclick="activateButton(this)">
+                        <i class="bi bi-person"></i>Account Manager <i class="bi bi-chevron-compact-down"></i>
+                       </button>
+                       <div class="collapse " id="collapseExample2">
+                         <div class="card dave">
+                             <a class="buttonst " href="Profile.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Profile</a>
+                             <a class="buttonst " href="Wallet.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Withdrawal wallet</a>
+                             <a class="buttonst " href="Security.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Security</a>
+                             <a class="buttonst " href="Beneficiary.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Beneficiary</a>             
+                           </div>
+                     </div>
+                </div>
+                
+                <div>
+                    <button class="custom-back button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"  onclick="activateButton(this)">
+                        <i class="bi bi-diagram-3"></i>Plateform statistics<i class="bi bi-chevron-compact-down"></i>
+                       </button>
+                       <div class="collapse " id="collapseExample3">
+                         <div class="card dave">
+                             <a class="buttonst " href="Proof.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Proof of Earning</a>
+                             <a class="buttonst " href="Leader.html" onclick="activateButton(this)"> <i class="bi bi-record2"></i> Leader Board</a>
+          
+                           </div>
+                     </div>
+                </div>
+
+            </div>
+            </div> 
+
+
+            <!------------- help -------------->
+
+           <div class="mt-5">
+            <p>Help</p>
+
+            <div class="d-grid gap-3">
+                <a class="buttonst " href="FAQ.html" onclick="activateButton(this)"> <i class="bi bi-question-octagon"></i>FQA</a> 
+                <a class="buttonst " href="Support.html" onclick="activateButton(this)"> <i class="bi bi-arrow-repeat"></i>Support</a> 
+                <a class="buttonst " href="/Login.html" onclick="activateButton(this)"> <i class="bi bi-box-arrow-left"></i>LogOut</a>  
+            </div>
+            
+           </div> 
+
+        </div>
+
+
+       
+       
+    </div>
+
+
+
+
+
+
+
+
+    
+    <!------------- main container -------------->
+    <div class="content ">
+      <div>
+        <h1 class="custom-bold">Make <span class="custom-color ">Investment</span></h1>
+        <p class="text-wrap custom-font-size-12">Start investing today and get huge profits, everyday!</p>
+      </div>
+
+       <div class="card-body">
+
+      <div class=" tab-content ">
+
+        <div class="custom-backonst p-3 " >
+      
+
+ 
+      
+       
+       
+       
+       
+            
+    
+
+      </div>
+
+     
+            
+      </div>
+
+      </div>
+
+    </div>   
+
+
+    
+       </div>
+
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+
+    function activateButton(button) {
+    
+    document.querySelectorAll('.buttons').forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    }
+
+    function copyUrl() {
+      var urlInput = document.getElementById("urlInput");
+      urlInput.select();
+      urlInput.setSelectionRange(0, 99999); 
+      alert("URL copied: " + urlInput.value);
+    }
+  </script>
+
+  <script>
+    const cryptoImages = document.querySelectorAll('.crypto-image');
+const selectedCryptoContainer = document.getElementById('selectedCrypto');
+const displayedIcon = document.getElementById('displayedIcon');
+const clearSelectionBtn = document.getElementById('clearSelection');
+
+cryptoImages.forEach(image => {
+  image.addEventListener('click', function() {
+    const selectedCrypto = this.dataset.crypto;
+    displayedIcon.src = `${selectedCrypto.toLowerCase()}.png`;
+    selectedCryptoContainer.classList.remove('hidden');
+  });
+});
+
+clearSelectionBtn.addEventListener('click', function() {
+  displayedIcon.src = '';
+  selectedCryptoContainer.classList.add('hidden');
+});
+
+  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
