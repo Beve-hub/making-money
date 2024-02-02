@@ -881,3 +881,26 @@ tbody {
   background-color: #24242486; 
   color: white; 
 }
+
+.fqa-item{
+  background-color: #24242486; 
+  color:white; 
+  border-top: 5px;
+  border-left: 5px;
+  border-right: 5px; 
+  border-color: #acacac;
+  width: 90%;
+  text-align: start;
+  justify-content: space-between;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fqa-items{
+  background-color: #24242486; 
+  color:white; 
+  width: 90%;
+}

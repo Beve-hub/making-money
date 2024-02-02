@@ -12,7 +12,16 @@
 <body>
     <!-- navbar-Sidebar -->
   <div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex ">
+      <div class="d-flex  align-items-center gap-1 mx-5">
+        <img src="/img/profile.png" alt="" class="bards ">
+        <div class="line">
+            <p  class="outlined">Rank: <span class="custom-color">Member</span> </p>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
     <!-- small screen navbar-Sidebar -->
     <div class="d-grid align-items-center justify-content-center my-2 gap-5">
         <div>
@@ -114,7 +123,7 @@
   </div>
 
   <!-- Navbar -->
-  <div class="d-flex align-items-center justify-content-between custom-backs ">
+  <div class="d-flex align-items-center justify-content-between custom-backs sticky-top">
     <div class="d-flex align-items-center">
         
   <div class="content d-block d-sm-none kicks" id="main">
@@ -150,7 +159,7 @@
             <div>
             <div class="d-grid gap-3">
                 <a class="button" href="Dashboard.html"><i class="bi bi-grid"></i> Dashboard</a>
-                <a class="button active" href="Package.html"><i class="bi bi-layers"></i> Packages</a>
+                <a class="button" href="Package.html"><i class="bi bi-layers"></i> Packages</a>
                 <a class="button" href="Make.html"><i class="bi bi-briefcase"></i> Make Investment </a>
                 <a class="button" href="Withdraw.html"><i class="bi bi-credit-card"></i> Withdraw</a>
             </div>
@@ -226,7 +235,7 @@
             <p>Help</p>
 
             <div class="d-grid gap-3">
-                <a class="buttonst " href="FAQ.html" onclick="activateButton(this)"> <i class="bi bi-question-octagon"></i>FQA</a> 
+                <a class="buttonst active" href="FAQ.html" onclick="activateButton(this)"> <i class="bi bi-question-octagon"></i>FQA</a> 
                 <a class="buttonst " href="Support.html" onclick="activateButton(this)"> <i class="bi bi-arrow-repeat"></i>Support</a> 
                 <a class="buttonst " href="/Login.html" onclick="activateButton(this)"> <i class="bi bi-box-arrow-left"></i>LogOut</a>  
             </div>
@@ -248,11 +257,365 @@
 
 
     
-    <!------------- main container -------------->
-    <div class="content">
-        <p>FQA</p>
-    </div>
-  </div>
+       <!------------- main container -------------->
+       <div class="content overflow-sm-hidden gap-5">
+      
+      
+        <div>
+          <h1 class="custom-bold">Frequently Asked<span class="custom-color ">Questions</span></h1>
+        </div>
+  
+      
+         
+    
+               <!-------------details -------------->
+       
+          <div class=" rounded p-4">
+            <div class="container">
+              <div class="row  justify-content-between">
+                <!-----------right--------->
+                <div class="col-md-6">
+                  <h5 class="custom-bold">Investments & Withdrawals</h5>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          How much is the minimum & maximum investment?  <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                        </button>
+
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" >
+                        <div class="accordion-body fqa-items">
+                          The minimum to invest or reinvest is $101.00 and the maximum per stake is $300,000.00
+                        </div>
+                      </div>
+
+                      
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample1">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                      Does reinvestment extend the stake duration? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse1" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      Reinvestments start a new stake for the reinvested amount. There is 5% manual reinvest convenience fee.
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                      When are profits available for withdrawal? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse2" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      Daily profits are moved to "Available Balance" once per week for non-compounding accounts on Saturday by 12 midnight Est
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample3">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                      Is there a minimum withdrawal? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse3" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      Minimum withdrawal is $20
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample4">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                      Are there any fees? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse4" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                    <p> 1. There is a 20% stake performance fee deducted at the end of a stake.</p>
+                    <p> 2. 5% reinvest convenience fee.</p>
+                    <p> 3. No withdraw fee or deposit fee.</p>
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample5">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                      How long does a stake last? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse5" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      A stake lasts between 71 - 101 calender days depending on investment package. Seed capital is locked for this period and then released at the end of the tenure minus 20% performance fee.
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample6">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                      When do I start earning after a successful stake? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse6" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      All stakes made before 12 noon Est are credited for that trading day. If after then it’s the next calendar day.
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample7">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                      How long does a withdrawal take? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse7" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      1-4 days to fulfill any withdraw request.
+                    </div>
+                  </div>
+
+                  
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample8">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                      What currencies are accepted? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapse8" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      We accept USDT(Trc20-Erc20-Bep20) and BUSD Bep20.
+                    </div>
+                  </div>
+
+                  
+                  </div>
+               
+                </div>
+
+                <!-----------left--------->
+                <div class="col-md-6">
+                  <h5 class="custom-bold">Profits & Affiliate</h5>
+                  <div class="accordion accordion-flush" id="accordionFlushExampleleft">
+                        <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseleftOne" aria-expanded="true" aria-controls="flush-collapseleftOne">
+                          When are profits credited? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                        </button>
+
+                      <div id="flush-collapseleftOne" class="accordion-collapse collapse" >
+                        <div class="accordion-body fqa-items">Profits are credited daily by 10 pm Est</div>
+                      </div>
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExampleleft1">
+                    <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseleft1" aria-expanded="false" aria-controls="flush-collapseleft1">
+                      Is there a referral system? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                    </button>
+
+                  <div id="flush-collapseleft1" class="accordion-collapse collapse" >
+                    <div class="accordion-body fqa-items">
+                      <p>We run a 10 tier referral system only on fresh capital deposits not reinvestments.</p>
+                      <p class="text-warning custom-font-size-12">** Rank deposit volume is the percentage volume of your downline invested capital that gets add to your "Team Rank Deposit".
+                        e.g 100% of your level 1 referral direct investment will be added to your "Team Rank Deposit" but 2.8% of your level 10 referral direct deposit will be added to your "Team Rank Deposit".</p>
+
+                        <table class="table table-bordered text-light">
+                          <thead>
+                            <tr>
+                              <th scope="col">Level</th>
+                              <th scope="col">Bonus</th>
+                              <th scope="col">Rank Deposit Volume</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>                              
+                              <td>One</td>
+                              <td>7%</td>
+                              <td>100% of bonus capital</td>
+                            </tr>
+
+                            <tr>                              
+                              <td>Two</td>
+                              <td>3%</td>
+                              <td>42% of bonus capital</td>
+                            </tr>
+                            <tr>                              
+                              <td>Three</td>
+                              <td>1.5%</td>
+                              <td>21% of bonus capital</td>
+                            </tr>
+                            <tr>                              
+                              <td>Four</td>
+                              <td>1%</td>
+                              <td>14% of bonus capital</td>
+                            </tr>
+                            <tr>                              
+                              <td>Five</td>
+                              <td>0.9%</td>
+                              <td>12.6% of bonus capital</td>
+                            </tr>
+                            <tr>                              
+                              <td>Six & Seven</td>
+                              <td>0.5%</td>
+                              <td>7% of bonus capital</td>
+                            </tr>
+                            <tr>                              
+                              <td>Eight - Ten</td>
+                              <td>0.2%</td>
+                              <td>2.8% of bonus capital</td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExampleleft2">
+                <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseleft2" aria-expanded="false" aria-controls="flush-collapseleft2">
+                  Is there an Affiliate Rank System & Rewards? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+                </button>
+
+              <div id="flush-collapseleft2" class="accordion-collapse collapse" >
+                <div class="accordion-body fqa-items">
+                  <p>We run a 10 tier referral system only on fresh capital deposits not reinvestments.</p>
+                  <p class="text-warning custom-font-size-12">** Rank deposit volume is the percentage volume of your downline invested capital that gets add to your "Team Rank Deposit".
+                    e.g 100% of your level 1 referral direct investment will be added to your "Team Rank Deposit" but 2.8% of your level 10 referral direct deposit will be added to your "Team Rank Deposit".</p>
+
+                    <table class="table table-bordered text-light">
+                      <thead>
+                        <tr>
+                          <th scope="col">Rank</th>
+                          <th scope="col">Bonus</th>
+                          <th scope="col">Active Deposit</th>
+                          <th scope="col">Team Rank Deposit</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>                              
+                          <td>Novice Earner</td>
+                          <td>$0</td>
+                          <td>$101</td>
+                          <td>$0</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Apprentice Affiliate</td>
+                          <td>$90</td>
+                          <td>$500</td>
+                          <td>$900</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Bronze Beneficiary</td>
+                          <td>$450</td>
+                          <td>$700</td>
+                          <td>$7,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Silver Strategist</td>
+                          <td>$1,100</td>
+                          <td>$1,300</td>
+                          <td>$19,000</td>
+                        </tr>
+                      
+                        <tr>                              
+                          <td>Gold Gainer</td>
+                          <td>$4,800</td>
+                          <td>$5,000</td>
+                          <td>$48,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Platinum Partner</td>
+                          <td>$10,000</td>
+                          <td>$8,500</td>
+                          <td>$90,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Diamond Dynamo</td>
+                          <td>$26,000</td>
+                          <td>$18,000</td>
+                          <td>$245,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Elite Earner</td>
+                          <td>$55,000</td>
+                          <td>$45,000</td>
+                          <td>$490,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Supreme Contributor</td>
+                          <td>$120,000</td>
+                          <td>$100,000</td>
+                          <td>$1,050,000</td>
+                        </tr>
+
+                        <tr>                              
+                          <td>Grand Guru</td>
+                          <td>$210,000</td>
+                          <td>$150,000</td>
+                          <td>$2,010,000</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+                 </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExampleleft3">
+            <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseleft3" aria-expanded="false" aria-controls="flush-collapseleft3">
+              When are bonuses paid? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+            </button>
+
+          <div id="flush-collapseleft3" class="accordion-collapse collapse" >
+            <div class="accordion-body fqa-items">
+              Referrals rewards are paid on fresh capital deposits only – not reinvestments-
+            </div>
+          </div>
+               </div>
+
+              <div class="accordion accordion-flush" id="accordionFlushExampleleft4">
+        <button class="fqa-item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseleft4" aria-expanded="false" aria-controls="flush-collapseleft4">
+          Can i earn more on the affiliate? <span class="custom-color"> <i class="bi bi-chevron-double-down"></i> </span> 
+        </button>
+
+      <div id="flush-collapseleft4" class="accordion-collapse collapse" >
+        <div class="accordion-body fqa-items">
+          Once you put in the work in building your team, the rest will be history.
+        </div>
+      </div>
+              </div>
+               
+                </div>
+              </div>
+
+            </div>
+          
+          </div>
+ 
+
+
+</div>
 
   
   <script>
