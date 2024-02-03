@@ -275,7 +275,12 @@
                 </div>
              <form class="">
            
-           
+                
+            <div class="">
+                <div id="qrcode"></div>
+                <p>USDT Bep20</p>
+            </div>
+
           <div class="mb-3 ">
             <label for="amount" class="col-sm-2 col-form-label">Amount:</label>
             <div class="col-sm-10">
@@ -284,9 +289,9 @@
           </div> 
 
           <div class="mb-3 ">
-            <label for="urlInput" class="col-sm-2 col-form-label">Wallet Address:</label>
+            <label  for="cryptoAddress" class="col-sm-2 col-form-label">Wallet Address:</label>
             <div class="input-group mb-3 w-75">
-                <input type="text" class=" custom-back text-light border  w-75 "   id="urlInput"  aria-label="Recipient's username" aria-describedby="button-addon2" value="TJQq6tXfpDNPZWfw35jmdJefWBgAsYXNak" readonly>
+                <input type="text" class=" custom-back text-light border  w-75 "   id="cryptoAddress"   aria-label="Recipient's username" aria-describedby="button-addon2" value="TJQq6tXfpDNPZWfw35jmdJefWBgAsYXNak" readonly>
                 <button class="btn custom-bg-color" onclick="copyUrl() "type="button" >Copy</button>
               </div>
           </div> 
@@ -309,6 +314,30 @@
     
        </div>
 
+
+       <script>
+       var qrcode = new QRCode("qrcode");
+
+       function makeCode () {
+        var elText = document.getElementById("amount");
+
+        if (!elText.value) {
+
+        }
+
+        qrcode.makeCode(elText.value);
+       }
+
+       makeCode();
+
+       $("#amount").on("blur",function () {
+        makeCode();
+       }).on("keydown",function (e) {
+        if (e.keyCode == 13) {
+            makeCode();
+        }
+        })
+      </script>
   
   <script>
     function openNav() {
