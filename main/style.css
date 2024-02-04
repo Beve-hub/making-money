@@ -914,3 +914,13 @@ tbody {
   text-decoration: none; 
   color: white; 
 }
+
+.custom-right {
+ color: rgb(82, 82, 82); 
+}
+
+
+.bottom-bod{
+  border-bottom: 1px solid rgba(82, 82, 82, 0.292); 
+  padding: 10px;
+}

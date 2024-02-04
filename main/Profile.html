@@ -287,7 +287,7 @@
           <div class="custom-back  rounded p-4">
              <form >
               <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Profile Image*</label>
+                <label for="profilePictureInput" class="col-sm-2 col-form-label">Profile Image*</label>
                 <div class="col-sm-10">
                   <input type="file"  id="profilePictureInput" accept="image/*" style="display: none;">
                   <div id="profilePictureContainer" class="">
@@ -353,81 +353,13 @@
   
        </div>
 
+  </div>
 
        
- <script>
-  function openProfilePictureUploader() {
-    const profilePictureInput = document.getElementById('profilePictureInput');
-    profilePictureInput.click();
-}
-
-document.getElementById('profilePictureInput').addEventListener('change', handleProfilePictureSelect);
-
-function handleProfilePictureSelect(event) {
-    const profilePicture = document.getElementById('profilePicture');
-    const file = event.target.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-
-        reader.onload = function (e) {
-            profilePicture.src = e.target.result;
-        };
-
-        reader.readAsDataURL(file);
-    }
-}
- </script>
- <script>
-  const currencySelect = document.getElementById('countryCurrency');
-
-  // Fetch the list of currencies from the ExchangeRatesAPI.io
-  fetch('https://api.exchangerate-api.com/v4/latest/USD')
-      .then(response => response.json())
-      .then(data => {
-          const currencies = Object.keys(data.rates);
-          currencies.forEach(currency => {
-              const option = document.createElement('option');
-              option.value = currency;
-              option.text = currency;
-              currencySelect.appendChild(option);
-          });
-      })
-      .catch(error => console.error('Error fetching currencies:', error));
-</script>
-<script>
-  const countrySelect = document.getElementById('country');
-
-  // Fetch the list of countries from the Restcountries API
-  fetch('https://restcountries.com/v3.1/all')
-      .then(response => response.json())
-      .then(data => {
-          data.forEach(country => {
-              const option = document.createElement('option');
-              option.value = country.alpha3Code;
-              option.text = country.name.common;
-              countrySelect.appendChild(option);
-          });
-      })
-      .catch(error => console.error('Error fetching countries:', error));
-</script>
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-
-    function activateButton(button) {
-    
-    document.querySelectorAll('.buttons').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    }
-  </script>
+ <script src="ProfileUpload.js"></script>
+ <script src="Currency.js"></script>
+   <script src="Country.js"></script>
+    <script src="Sidebar.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

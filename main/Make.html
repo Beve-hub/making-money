@@ -261,6 +261,7 @@
     
     <!------------- main container -------------->
     <div class="content ">
+      
       <div>
         <h1 class="custom-bold">Make <span class="custom-color ">Investment</span></h1>
         <p class="text-wrap custom-font-size-12">Start investing today and get huge profits, everyday!</p>
@@ -270,7 +271,31 @@
 
       <div class=" tab-content ">
 
-        <div class="custom-backonst p-5  tab-pane fade show active" >
+        <div class="custom-backonst p-4  tab-pane fade show active" >
+
+          <div class="container mb-5">
+            <div class="row bottom-bod w-75">
+
+              <div class="col-md-2  custom-color">
+                <i class="bi bi-record2"></i> <span>Amount</span>  <i class="bi bi-arrow-right"></i>
+               </div>
+     
+             <div class=" custom-right col-md-2 ">
+              <i class="bi bi-record2"></i> <span>Overview</span>  <i class="bi bi-arrow-right"></i>
+             </div>
+  
+             <div class=" custom-right col-md-2 ">
+              <i class="bi bi-record2"></i> <span>Payment</span>  <i class="bi bi-arrow-right"></i>
+             </div>
+  
+             <div class=" col-md-2  custom-right">
+              <i class="bi bi-record2"></i> <span>Completed</span>
+             </div>
+
+            </div>
+           
+          </div>
+          
         <div class="d-flex align-items-end justify-content-between ">
         <div class="text-start ">
           <p class="custom-font-size-20">Set amount to <span class="custom-color">Invest</span></p>
@@ -279,13 +304,14 @@
        
         
         </div>
+        <form id="investmentForm" onsubmit="return onSubmit()">
         <div class="col-md">
-          <label  class="form-label">Package</label>
-          <select class="form-select custom-back text-light  w-75" aria-label="Default select example">
+          <label for="package"  class="form-label">Package</label>
+          <select class="form-select custom-back text-light  w-75" id="package" aria-label="Default select example">
             <option selected>Select your package ....</option>
-            <option value="1">Starters plan</option>
-            <option value="2">Professional plan</option>
-            <option value="3">Company plan</option>
+            <option value="Starters plan">Starters plan</option>
+            <option value="Professional plan">Professional plan</option>
+            <option value="Company plan">Company plan</option>
           </select>
         </div>
 
@@ -297,28 +323,28 @@
         </div>
        
         <div class="mb-3">
-          <label for="amount" class="form-label">Account Type</label>
+          <label for="card" class="form-label">Account Type</label>
 
 
-          <div class="row gap-2">
+          <div id="card" class="row gap-2">
             <!-- Crypto icons go here -->
             
-           <div class="crypto-icon ">
-            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
+           <div  onclick="handleCryptoOptionClick(this)"  class="crypto-icon crypto-option">
+            <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="" >
             <p class="custom-font-size-14">TRC20</p>
            </div>
 
-           <div class="crypto-icon ">
+           <div onclick="handleCryptoOptionClick(this)"  class="crypto-icon crypto-option">
             <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
             <p class="custom-font-size-14">BEP20</p>
            </div>
 
-           <div class="crypto-icon ">
+           <div onclick="handleCryptoOptionClick(this)"  class="crypto-icon crypto-option">
             <img src="/img/tether.svg" class="crypto-image" data-crypto="BTC" alt="">
             <p class="custom-font-size-14">ERC20</p>
            </div>
 
-           <div class="crypto-icon ">
+           <div onclick="handleCryptoOptionClick(this)"  class="crypto-icon crypto-option">
             <img src="/img/BUSD.svg" class="crypto-image" data-crypto="BTC" alt="">
             <p class="custom-font-size-14">BUSD</p>
            </div>
@@ -327,12 +353,12 @@
         </div>
 
         <div class="d-flex justify-contntet-end align-items-end mt-5">
-          <button type="submit"  class="btn custom-colors"><a href="Overview.html" class="rip">Continue</a></button>
+          <button type="submit"  class="btn custom-colors">Continue</button>
         </div>
-
+      </form>
             
       </div>
-
+      
       </div>
 
      
@@ -348,9 +374,9 @@
 
   
        
-
- <script src="Crypto.js"></script>
-  <script src="Sidebar.js"></script>
+    <script src="Make.js"></script>
+    <script src="Crypto.js"></script>
+    <script src="Sidebar.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

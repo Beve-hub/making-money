@@ -265,6 +265,29 @@
        
           <div class="custom-back  rounded p-4">
 
+            <div class="container mb-5 mt-2">
+              <div class="row  w-75 bottom-bod">
+  
+                <div class="col-md-2  custom-color">
+                  <i class="bi bi-record2"></i> <span>Amount</span>  <i class="bi bi-arrow-right"></i>
+                 </div>
+       
+               <div class=" custom-color col-md-2 ">
+                <i class="bi bi-record2"></i> <span>Overview</span>  <i class="bi bi-arrow-right"></i>
+               </div>
+    
+               <div class=" custom-color col-md-2 ">
+                <i class="bi bi-record2"></i> <span>Payment</span>  <i class="bi bi-arrow-right"></i>
+               </div>
+    
+               <div class=" col-md-2  custom-right">
+                <i class="bi bi-record2"></i> <span>Completed</span>
+               </div>
+  
+              </div>
+             
+            </div>
+
             <div class="">
                 <div class="text-start ">
                     <p class="custom-font-size-20 custom-bold">Make Payment - <span class="custom-color">#5566316377 </span></p>
@@ -339,51 +362,8 @@
         })
       </script>
   
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-
-    function activateButton(button) {
-    
-    document.querySelectorAll('.buttons').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    }
-
-    function copyUrl() {
-      var urlInput = document.getElementById("urlInput");
-      urlInput.select();
-      urlInput.setSelectionRange(0, 99999); 
-      alert("URL copied: " + urlInput.value);
-    }
-  </script>
-
-  <script>
-    const cryptoImages = document.querySelectorAll('.crypto-image');
-const selectedCryptoContainer = document.getElementById('selectedCrypto');
-const displayedIcon = document.getElementById('displayedIcon');
-const clearSelectionBtn = document.getElementById('clearSelection');
-
-cryptoImages.forEach(image => {
-  image.addEventListener('click', function() {
-    const selectedCrypto = this.dataset.crypto;
-    displayedIcon.src = `${selectedCrypto.toLowerCase()}.png`;
-    selectedCryptoContainer.classList.remove('hidden');
-  });
-});
-
-clearSelectionBtn.addEventListener('click', function() {
-  displayedIcon.src = '';
-  selectedCryptoContainer.classList.add('hidden');
-});
-
-  </script>
+    <script src="Sidebar.js"></script>
+    <script src="Crypto.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
