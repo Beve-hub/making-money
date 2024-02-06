@@ -588,6 +588,14 @@ input:focus {
  width: 5rem;
  }
 
+ .active.crypto-icon {
+  background-color: #8fff9a67;
+  padding: 5px 20px; 
+  color:#00ff22;
+  border-radius: 20px;
+  border: 1px dash #00ff22;
+}
+
 .container-pad{
   background-color: #242424;
   padding: 10px;
@@ -916,7 +924,7 @@ tbody {
 }
 
 .custom-right {
- color: rgb(82, 82, 82); 
+ color: rgba(82, 82, 82, 0.406); 
 }
 
 

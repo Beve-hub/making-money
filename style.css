@@ -39,6 +39,13 @@ body{
     font-style: italic;
   }
 
+  .custom-font-size-24 {
+    font-size: 24px;
+  }
+
+  .custom-font-size-22 {
+    font-size: 22px;
+  }
   .custom-font-size-20 {
     font-size: 20px;
   }
