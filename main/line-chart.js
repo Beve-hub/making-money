@@ -1,8 +1,7 @@
-
 new Chart("ourChart", {
   type: "line",
   data: {
-    labels:[100,200,300,400,500,600,700,800,900,1000],
+    labels:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
     datasets: [{
       data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
       borderColor:  "#55FE66",
@@ -14,6 +13,20 @@ new Chart("ourChart", {
     }]
   },
   options: {
-    legend: {display: false}
+    legend: {display: false},
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Month' // Label for the x-axis
+        }
+      }],
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Amount' // Label for the y-axis
+        }
+      }]
+    }
   }
 });
