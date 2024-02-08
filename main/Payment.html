@@ -325,7 +325,7 @@
      
 
         <div class=" mt-4  ">
-           <button type="button" class="btn custom-bg-color">Checkout<i class="bi bi-chevron-right"></i></button>
+           <button type="button" class="btn custom-bg-color"><a href="Completed.html" class="rip">Checkout<i class="bi bi-chevron-right"></i></a></button>
         </div>
             </div>
           </div>  
@@ -338,29 +338,7 @@
        </div>
 
 
-       <script>
-       var qrcode = new QRCode("qrcode");
-
-       function makeCode () {
-        var elText = document.getElementById("amount");
-
-        if (!elText.value) {
-
-        }
-
-        qrcode.makeCode(elText.value);
-       }
-
-       makeCode();
-
-       $("#amount").on("blur",function () {
-        makeCode();
-       }).on("keydown",function (e) {
-        if (e.keyCode == 13) {
-            makeCode();
-        }
-        })
-      </script>
+      
   
     <script src="Sidebar.js"></script>
     <script src="Crypto.js"></script>
