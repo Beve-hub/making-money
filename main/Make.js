@@ -1,46 +1,28 @@
 function onSubmit() {
   // Get values for the form
   const amountInput = document.getElementById("amount");
-  const selectedCard = document.querySelector(".selected");
+  const packageInput = document.getElementById("package");
 
   // Check if required elements exist
-  if (!amountInput || !selectedCard) {
+  if (!amountInput || !packageInput) {
     console.error("Required form elements not found");
     return false;
   }
 
   // Get the selected plan
-  let selectedPlan;
-  if (document.getElementById("startersPlan").checked) {
-    selectedPlan = "starters";
-  } else if (document.getElementById("professionalPlan").checked) {
-    selectedPlan = "professional";
-  } else if (document.getElementById("companyPlan").checked) {
-    selectedPlan = "company";
-  } else {
-    console.error("No plan selected");
-    return false;
-  }
+  const selectedPlan = packageInput.value;
 
-  // Update package input with the selected plan
-  const packageInput = document.getElementById("package");
-  if (packageInput) {
-    packageInput.value = selectedPlan;
-  } else {
-    console.error("Package input element not found");
-    return false;
-  }
+  // Get the selected amount
+  const amount = amountInput.value;
 
-  const Amount = amountInput.value;
-  const Card = selectedCard.innerText;
-
-  // Store the overview data in session storage
+  // Store the selected plan and amount in session storage
   sessionStorage.setItem("package", selectedPlan);
-  sessionStorage.setItem("card", Card);
-  sessionStorage.setItem("amount", Amount);
+  sessionStorage.setItem("amount", amount);
 
   // Redirect to the overview page with parameters in the URL
-  window.location.href = `overview.html?amount=${Amount}&package=${selectedPlan}&card=${Card}`;
+  window.location.href = `overview.html?amount=${encodeURIComponent(
+    amount
+  )}&package=${encodeURIComponent(selectedPlan)}`;
 
   // Prevent the form from submitting the traditional way
   return false;
