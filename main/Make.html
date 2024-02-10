@@ -520,7 +520,11 @@
                   </p>
                 </div>
               </div>
-              <form id="investmentForm" onsubmit="return onSubmit()">
+              <form
+                id="investmentForm"
+                onsubmit="return onSubmit()"
+                class="gap-3"
+              >
                 <div class="col-md">
                   <label for="package" class="form-label">Package</label>
                   <select
@@ -550,10 +554,8 @@
 
                 <div class="mb-3">
                   <label for="card" class="form-label">Account Type</label>
-
                   <div id="card" class="row gap-2">
                     <!-- Crypto icons go here -->
-
                     <button
                       type="submit"
                       onclick="handleCryptoOptionClick(this)"
